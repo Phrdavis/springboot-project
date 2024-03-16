@@ -31,22 +31,9 @@ public class Main {
 
     record Person(String name, int age, double savings){};
     
-    record GreetResponse
-    (
-        
-        String greet,
-        List<String> favProgrammingLanguages,
-        Person person
+    record GreetResponse(String greet, List<String> favProgrammingLanguages, Person person){
 
-    ){
-
-            public GreetResponse
-            (
-                String greet, 
-                List<String> favProgrammingLanguages,
-                Person person
-            )
-            {
+            public GreetResponse(String greet, List<String> favProgrammingLanguages, Person person){
 
                 this.greet = greet; 
                 this.favProgrammingLanguages = favProgrammingLanguages; 
