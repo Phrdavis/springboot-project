@@ -1,0 +1,19 @@
+services:
+    db: 
+      image: mysql:latest
+      restart: unless-stopped
+      environment: 
+        MYSQL_ROOT_PASSWORD: Bombinhas123@
+        MYSQL_DATABASE: davi_home
+        MYSQL_TCP_PORT: 3306
+      ports:
+        8888: 8888
+      expose:
+        3306
+      
+
+    adminer:
+      image: adminer
+      restart: unless-stopped
+      ports: 
+        - 8888:8888"
