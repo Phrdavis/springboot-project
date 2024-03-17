@@ -1,2 +1,18 @@
 server:
-  port: 3000
+  port: 3030
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:8080/customer
+    username: root
+    password: Bombinhas123@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate: 
+      ddl-auto: update
+    show-sql: true
+  
+  application:
+    name: SPRING_PROJECT
